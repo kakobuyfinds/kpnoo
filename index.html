@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="description" content="Use this OrientDig spreadsheet guide to browse real HipobuyFind listings, compare USD estimates, and check sizing, warehouse QC photos, and shipping costs.">
+  <meta name="theme-color" content="#12352c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OrientDig spreadsheet | Product Finds, QC & Shipping">
+  <meta property="og:description" content="Browse shoes and clothing from HipobuyFind and learn what to check before placing an OrientDig order.">
+  <title>OrientDig spreadsheet | Product Finds, QC &amp; Shipping</title>
+  <!-- index.html
+    Search results reviewed for OrientDig spreadsheet:
+    https://www.orientdigi.com/
+    https://www.orientdigs.com/
+    https://spreadsheetorientdig.com/
+    https://orientdigindex.com/en/orientdig-spreadsheet
+    The results emphasize category browsing, USD prices, QC galleries, and source
+    verification. This page applies those findings through filterable static listings,
+    exact source links, a dated price snapshot, and an item-level QC checklist.
+    The results were retrieved through web search. Google first-page positions were
+    not independently verified.
+    Indexing submission is pending. Publish this file at its final public URL and
+    set a self-referencing canonical URL. Then request indexing for that URL in
+    Google Search Console and submit it in Bing Webmaster Tools for the verified site.
+    https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl
+    https://www.bing.com/webmasters/help/URL-Submission-62f2860b
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "OrientDig spreadsheet",
+    "description": "An independent OrientDig shopping guide with selected HipobuyFind listings and practical sizing, QC, and shipping checks.",
+    "inLanguage": "en",
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Selected HipobuyFind listings",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Cream Chunky Sneakers with Wide Laces","url":"https://hipobuyfind.com/goods-148191.html"},
+        {"@type":"ListItem","position":2,"name":"Fleece-Lined Hoodie","url":"https://hipobuyfind.com/goods-154917.html"},
+        {"@type":"ListItem","position":3,"name":"Graphic Short-Sleeve T-Shirt","url":"https://hipobuyfind.com/goods-154920.html"},
+        {"@type":"ListItem","position":4,"name":"Hooded Quick-Dry Jacket","url":"https://hipobuyfind.com/goods-154851.html"}
+      ]
+    }
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #173128;
+      --green: #12352c;
+      --muted: #4d655b;
+      --accent: #d8f59a;
+      --paper: #f5f7f0;
+      --line: #dbe3d8;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 1rem; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1rem/1.6 "DM Sans", system-ui, sans-serif;
+    }
+    [hidden] { display: none !important; }
+    a { color: inherit; }
+    a:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible {
+      outline: 3px solid #589255;
+      outline-offset: 4px;
+    }
+    .wrap { width: min(1180px, calc(100% - 2rem)); margin-inline: auto; }
+    .masthead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .75rem 2rem;
+      min-height: 72px;
+      padding-block: .75rem;
+    }
+    .brand { font-weight: 850; letter-spacing: -.03em; text-decoration: none; }
+    nav { display: flex; flex-wrap: wrap; gap: .4rem 1.15rem; }
+    nav a { text-decoration: none; font-weight: 650; font-size: .9rem; }
+    nav a:hover, .listing:hover { text-decoration: underline; }
+    .hero {
+      display: grid;
+      place-items: center;
+      min-height: 420px;
+      padding: 4rem 1.25rem;
+      text-align: center;
+      color: #fff;
+      background: radial-gradient(ellipse at 90% 8%, #376345, transparent 66%), var(--green);
+      border-radius: 1.5rem;
+    }
+    h1, h2, h3 { line-height: 1.12; letter-spacing: -.035em; }
+    h1 { font-size: clamp(2.5rem, 7vw, 5.5rem); margin: 0; }
+    h2 { font-size: clamp(1.85rem, 4vw, 3rem); margin: 0 0 .7rem; }
+    h3 { font-size: 1.15rem; margin: 0 0 .6rem; }
+    .hero p { max-width: 58ch; margin: 1rem auto 1.6rem; color: #e2eee6; }
+    .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 48px;
+      padding: .65rem 1.25rem;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--green);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .button:hover { background: #e7ffb4; }
+    .secondary { background: transparent; color: #fff; border-color: #abc6b4; }
+    .secondary:hover { background: #ffffff19; }
+    section { margin-top: clamp(2.5rem, 6vw, 5rem); }
+    section > p, .muted { color: var(--muted); }
+    .filters { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.15rem 0 .5rem; }
+    .filters label { display: grid; gap: .25rem; flex: 1 1 220px; font-weight: 700; }
+    input, select {
+      width: 100%;
+      min-height: 46px;
+      padding: .6rem .8rem;
+      border: 1px solid #9dae9f;
+      border-radius: .6rem;
+      background: #fff;
+      color: inherit;
+      font: inherit;
+    }
+    #result-count { margin: .5rem 0 1rem; font-size: .9rem; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+    .card, .panel { background: #fff; border: 1px solid var(--line); border-radius: 1rem; }
+    .card { overflow: hidden; display: flex; flex-direction: column; }
+    .card img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: contain; background: #edf1e9; }
+    .card-content { display: flex; flex-direction: column; flex: 1; padding: 1rem; }
+    .category { color: var(--muted); font-size: .82rem; margin: 0 0 .4rem; }
+    .price { font-weight: 800; margin: auto 0 .4rem; }
+    .price small { font-weight: 500; color: var(--muted); white-space: nowrap; }
+    .listing { font-size: .9rem; font-weight: 750; color: #235c40; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .panel { padding: 1.25rem; }
+    .panel p { margin: 0; color: var(--muted); }
+    details { padding: .9rem 0; border-bottom: 1px solid var(--line); }
+    summary { cursor: pointer; font-weight: 750; }
+    details p { max-width: 75ch; margin: .65rem 0 0; color: var(--muted); }
+    footer { margin-top: 4rem; padding: 1.4rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    @media (max-width: 840px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 620px) { .steps { grid-template-columns: 1fr; } }
+    @media (max-width: 370px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+<link rel="canonical" href="https://kakobuyfinds.github.io/kpnoo/">
+</head>
+<body>
+  <header class="wrap masthead">
+    <a class="brand" href="#top">OrientDig spreadsheet</a>
+    <nav aria-label="Page sections">
+      <a href="#catalog">Product catalog</a>
+      <a href="#buying-guide">Buying guide</a>
+      <a href="#questions">FAQ</a>
+    </nav>
+  </header>
+
+  <main id="top" class="wrap">
+    <div class="hero">
+      <div>
+        <h1>OrientDig spreadsheet</h1>
+        <p>Browse shoes and clothing from HipobuyFind, then check the listing, size chart, and estimated shipping before placing an order.</p>
+        <div class="actions">
+          <a class="button" href="https://hipobuyfind.com">OrientDig spreadsheet</a>
+          <a class="button secondary" href="https://hipobuyfind.com">Buy it now</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="catalog" aria-labelledby="catalog-title">
+      <h2 id="catalog-title">Product catalog</h2>
+      <p>Selected HipobuyFind listings checked on <time datetime="2026-11-18">November 18, 2026</time>. Approximate USD prices reflect the listed item price. Check the source for current prices and availability.</p>
+      <form class="filters" id="filters" role="search" aria-label="Filter the product catalog" hidden>
+        <label for="product-search">Search products
+          <input id="product-search" type="search" placeholder="Try hoodie, sneakers, or an item number">
+        </label>
+        <label for="product-category">Category
+          <select id="product-category">
+            <option value="">All categories</option>
+            <option value="shoes">Shoes</option>
+            <option value="hoodies">Hoodies and sweatshirts</option>
+            <option value="tees">T-shirts</option>
+            <option value="jackets">Jackets</option>
+          </select>
+        </label>
+      </form>
+      <p id="result-count" role="status" hidden></p>
+      <div class="grid" id="products">
+        <article class="card" data-category="shoes">
+          <img src="https://si.geilicdn.com/open1700230128-1234478995-64a0000001987b40d1cb0a8115c2_1080_1440.jpg" alt="Cream chunky sneakers with wide laces" width="1080" height="1440" loading="lazy" decoding="async">
+          <div class="card-content">
+            <p class="category">Shoes · Item 148191</p>
+            <h3>Cream Chunky Sneakers with Wide Laces</h3>
+            <p class="price">≈ $48.61 <small>· ¥350.00</small></p>
+            <a class="listing" href="https://hipobuyfind.com/goods-148191.html" aria-label="View cream chunky sneakers on HipobuyFind">View source listing</a>
+          </div>
+        </article>
+        <article class="card" data-category="hoodies">
+          <img src="https://si.geilicdn.com/open1792148229-1234478995-76d100000196f413b04f0a8133b0_800_800.jpg" alt="Fleece-lined hoodie listing photo" width="800" height="800" loading="lazy" decoding="async">
+          <div class="card-content">
+            <p class="category">Hoodies · Item 154917</p>
+            <h3>Fleece-Lined Hoodie</h3>
+            <p class="price">≈ $23.61 <small>· ¥170.00</small></p>
+            <a class="listing" href="https://hipobuyfind.com/goods-154917.html" aria-label="View fleece-lined hoodie on HipobuyFind">View source listing</a>
+          </div>
+        </article>
+        <article class="card" data-category="tees">
+          <img src="https://si.geilicdn.com/open1792148229-1234478995-09a000000196efa4b3cc0aa0834c_800_800.jpg" alt="Graphic short-sleeve T-shirt listing photo" width="800" height="800" loading="lazy" decoding="async">
+          <div class="card-content">
+            <p class="category">T-shirts · Item 154920</p>
+            <h3>Graphic Short-Sleeve T-Shirt</h3>
+            <p class="price">≈ $14.58 <small>· ¥105.00</small></p>
+            <a class="listing" href="https://hipobuyfind.com/goods-154920.html" aria-label="View graphic T-shirt on HipobuyFind">View source listing</a>
+          </div>
+        </article>
+        <article class="card" data-category="jackets">
+          <img src="https://si.geilicdn.com/wdseller1489596767-2b4400000193c17bed690a210139_697_1024.jpg" alt="Hooded quick-dry jacket listing photo" width="697" height="1024" loading="lazy" decoding="async">
+          <div class="card-content">
+            <p class="category">Jackets · Item 154851</p>
+            <h3>Hooded Quick-Dry Jacket</h3>
+            <p class="price">≈ $21.83 <small>· ¥157.14</small></p>
+            <a class="listing" href="https://hipobuyfind.com/goods-154851.html" aria-label="View hooded quick-dry jacket on HipobuyFind">View source listing</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="buying-guide" aria-labelledby="guide-title">
+      <h2 id="guide-title">How to use an OrientDig spreadsheet</h2>
+      <div class="steps">
+        <article class="panel">
+          <h3>Match the exact listing</h3>
+          <p>Open the HipobuyFind product page and check the available buying links. If an OrientDig option is present, open it and confirm the seller, color, size, and price before paying. Compare the seller’s measurements with a similar item that fits you.</p>
+        </article>
+        <article class="panel">
+          <h3>Review warehouse QC photos</h3>
+          <p>When warehouse photos are available for your order, match them to your selected variant. For sneakers, check both size labels and the soles. For clothing, check the print placement, seams, and any measurement photos. Check the agent’s return window before approving shipment.</p>
+        </article>
+        <article class="panel">
+          <h3>Estimate the delivered cost</h3>
+          <p>Add the item price, domestic delivery, any service fees, international shipping, and applicable taxes or duties. Compare routes using the destination and the packed parcel’s weight and dimensions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="questions" aria-labelledby="faq-title">
+      <h2 id="faq-title">Frequently asked questions</h2>
+      <details>
+        <summary>What is an OrientDig spreadsheet?</summary>
+        <p>It is a product directory that helps shoppers find listings to compare before ordering through a purchasing agent. This guide uses a browsable catalog of selected HipobuyFind listings.</p>
+      </details>
+      <details>
+        <summary>Where does the Buy it now button take me?</summary>
+        <p>It opens the HipobuyFind homepage. Use a product card’s source link to go directly to that item and review the buying options on its listing.</p>
+      </details>
+      <details>
+        <summary>Where can I check QC photos?</summary>
+        <p>The catalog shows source listing photos. For QC photos of an item you ordered, check your agent’s order or warehouse page when the parcel arrives there. Match the photos to your exact color and size.</p>
+      </details>
+      <details>
+        <summary>What does the USD estimate cover?</summary>
+        <p>It covers the listed item price converted to an approximate USD amount at the time of the catalog check. Shipping, agent fees, and any applicable duties or taxes are separate costs.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    Independent shopping guide. Product listings, photos, and price references from
+    <a href="https://hipobuyfind.com">HipobuyFind</a>.
+  </footer>
+
+  <script>
+    (() => {
+      const filters = document.getElementById('filters');
+      const search = document.getElementById('product-search');
+      const category = document.getElementById('product-category');
+      const count = document.getElementById('result-count');
+      const products = Array.from(document.querySelectorAll('#products .card'));
+
+      function updateCatalog() {
+        const terms = search.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+        let visible = 0;
+
+        for (const product of products) {
+          const matchesCategory = !category.value || product.dataset.category === category.value;
+          const text = product.textContent.toLowerCase();
+          product.hidden = !(matchesCategory && terms.every(term => text.includes(term)));
+          if (!product.hidden) visible += 1;
+        }
+
+        count.textContent = visible === 0
+          ? 'No products match. Try a different search or category.'
+          : `${visible} of ${products.length} products shown`;
+      }
+
+      filters.addEventListener('submit', event => {
+        event.preventDefault();
+        updateCatalog();
+      });
+      search.addEventListener('input', updateCatalog);
+      category.addEventListener('change', updateCatalog);
+      filters.hidden = false;
+      count.hidden = false;
+      updateCatalog();
+    })();
+  </script>
+</body>
+</html>
